@@ -31,6 +31,7 @@ public final class AppConstants {
     public static final String CLIENT_ID = "Client-id";
     public static final String CONNECTION_QUALITY = "Connection-quality";
     public static final String CLIENT_SECRET = "Client-secret";
+    public static final String GET_MOVIES = "GET_MOVIES";
 
     private AppConstants() {
         // This utility class is not publicly instantiable

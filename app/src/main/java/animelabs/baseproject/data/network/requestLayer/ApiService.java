@@ -23,6 +23,14 @@ package animelabs.baseproject.data.network.requestLayer;
 
 */
 
+import animelabs.baseproject.data.network.models.MovieResponse;
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
 public interface ApiService {
     // Declare all APIs here
+    @GET("movie/popular")
+    Call<MovieResponse> getMovies(@Query("api_key") String mobileNumber, @Query("page") int page);
+
 }
